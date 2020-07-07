@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_product_id_favourites",
+  "info": {
+    "name": "Favourites",
+    "icon": "heart"
+  },
+  "options": {},
+  "attributes": {
+    "product": {
+      "model": "products"
+    }
+  }
+}

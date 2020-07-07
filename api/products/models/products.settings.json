@@ -1,0 +1,103 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "name": "Products"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "ProductName": {
+      "type": "string"
+    },
+    "Images": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "Price": {
+      "type": "decimal"
+    },
+    "Specifications": {
+      "type": "component",
+      "repeatable": true,
+      "component": "specs.specifications"
+    },
+    "StockQTY": {
+      "type": "integer",
+      "private": true,
+      "default": 1
+    },
+    "Description": {
+      "type": "text"
+    },
+    "InnerSubCategory": {
+      "type": "enumeration",
+      "enum": [
+        "Mobiles"
+      ]
+    },
+    "Subcategory": {
+      "type": "enumeration",
+      "enum": [
+        "__________ELECTRONICS__________",
+        "Mobile_Phones_And_Tablets",
+        "Mobile_Tablet_And_Accessories",
+        "VideoGames_Consoles_And_Accessories",
+        "Laptops_And_PCs",
+        "Desktop_PC_And_Accessories",
+        "LED_Smart_LED_TV",
+        "Streaming_And_MediaPlayer",
+        "DigitalCameras",
+        "DSLR_And_DroneCamera",
+        "__________WOMANS_STORE___________",
+        "Womens_Clothing",
+        "Womans_Jewelry",
+        "Womens_Watches",
+        "Womans_Accessories",
+        "Womens_Shoes",
+        "__________MENS_STORE___________",
+        "Mens_Watches",
+        "Mens_Footwear",
+        "Mens_Clothing",
+        "Mens_Accessories",
+        "__________HEALTH_AND_CARE___________",
+        "Perfumes_And_Fragrance",
+        "Makeup",
+        "Mens_Personal_Care",
+        "Womans_Personal_Care",
+        "Health_Care",
+        "Salon_Equipments",
+        "___________KIDS_STORE__________",
+        "Baby_Care",
+        "Boys_Fashion",
+        "Girls_Fashion",
+        "Kids_And_Baby_Accessories",
+        "Babies_Wear",
+        "Kids_Toys",
+        "Kids_Footwear",
+        "__________HOME_AND_LIVING__________",
+        "Kitchen_Appliances",
+        "Home_Appliances",
+        "Kitchen_Accessories",
+        "Inverter",
+        "Bedding",
+        "Bath",
+        "Lawn_And_Garden",
+        "Home_Decor",
+        "Furniture",
+        "Lightining"
+      ]
+    },
+    "categories": {
+      "via": "products",
+      "collection": "category"
+    }
+  }
+}

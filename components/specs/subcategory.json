@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_specs_subcategories",
+  "info": {
+    "name": "Subcategory",
+    "icon": "adjust"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "products": {
+      "collection": "products"
+    }
+  }
+}
