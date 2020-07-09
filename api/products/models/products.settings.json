@@ -24,11 +24,6 @@
     "Price": {
       "type": "decimal"
     },
-    "Specifications": {
-      "type": "component",
-      "repeatable": true,
-      "component": "specs.specifications"
-    },
     "StockQTY": {
       "type": "integer",
       "private": true,
@@ -40,7 +35,46 @@
     "InnerSubCategory": {
       "type": "enumeration",
       "enum": [
-        "Mobiles"
+        "________ELECTRONICS________",
+        "Mobiles",
+        "Tablets",
+        "Video_Games",
+        "Streaming_Media",
+        "LED_TVs",
+        "DSLR",
+        "Cameras",
+        "Dron_Cameras",
+        "Air_Conditions",
+        "Refrigerators",
+        "Microwave_Oven",
+        "Irons",
+        "Speakers",
+        "Juicer_Blender",
+        "________MANS_STORE________",
+        "________wearing________",
+        "Jeans",
+        "Casual_Shirts",
+        "T_Shirts",
+        "Kurtas",
+        "Cultural_Wearing",
+        "Summer_Wearings",
+        "________shoes________",
+        "Casual_Shoes",
+        "Office_Shoes",
+        "________fashion________",
+        "Glasses",
+        "Beauty_Products",
+        "Wallets",
+        "________WOMANS_STORE________",
+        "casual_wearing",
+        "jeans",
+        "cultural_dress",
+        "________shoes_________",
+        "woman_casual_shoes",
+        "high_heals",
+        "________accassories_________",
+        "hand_bags",
+        "woman_glasses"
       ]
     },
     "Subcategory": {
@@ -96,8 +130,8 @@
       ]
     },
     "categories": {
-      "via": "products",
-      "collection": "category"
+      "collection": "category",
+      "via": "products"
     }
   }
 }

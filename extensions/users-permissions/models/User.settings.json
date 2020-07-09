@@ -52,16 +52,6 @@
       "via": "users",
       "plugin": "users-permissions",
       "configurable": false
-    },
-    "Cart": {
-      "type": "component",
-      "repeatable": false,
-      "component": "product-id.cart"
-    },
-    "Favourites": {
-      "type": "component",
-      "repeatable": false,
-      "component": "product-id.favourites"
     }
   }
 }

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_product_products",
+  "info": {
+    "name": "Product",
+    "icon": "battery-empty"
+  },
+  "options": {},
+  "attributes": {
+    "NameOfProduct": {
+      "type": "string"
+    },
+    "ProductInfo": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_second_comp_second_comps",
+  "info": {
+    "name": "SecondComp",
+    "icon": "arrow-right"
+  },
+  "options": {},
+  "attributes": {
+    "SecondName": {
+      "type": "string"
+    },
+    "SecondInfo": {
+      "type": "string"
+    }
+  }
+}
